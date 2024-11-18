@@ -33,3 +33,6 @@ zookeeper-server-start:
 # note the use of the custom server.properties file
 kafka-server-start:
 	kafka-server-start /app/server.properties
+
+kafka-topics-create:
+	kafka-topics --create --topic test --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
