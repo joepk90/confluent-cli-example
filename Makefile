@@ -25,7 +25,7 @@ ssh-service-broker:
 ### COMMANDS WONT WORK USING MAKE - SIMPLY HERE FOR DOCUMENTATION
 
 
-### BROKER SERVICE
+### BROKER SERVICE COMMANDS
 
 zookeeper-server-start:
 	zookeeper-server-start /etc/kafka/zookeeper.properties
