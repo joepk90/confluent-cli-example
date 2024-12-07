@@ -18,7 +18,8 @@ service-restart-broker:
 
 # connect to services
 ssh-service-broker:
-	docker exec -it broker /bin/bash
+	docker exec -it -w /app/ broker /bin/bash
+	
 
 
 
