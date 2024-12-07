@@ -43,3 +43,9 @@ kafka-produce:
 
 kafka-consume:
 	kafka-console-consumer --topic test --bootstrap-server localhost:9092 --from-beginning
+
+kafka-logs:
+	kafka-dump-log --files /path/to/log/file
+
+kafka-topics-describe:
+	kafka-topics --describe --zookeeper localhost:2101 --topics test
