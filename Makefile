@@ -37,3 +37,9 @@ ssh-service-broker:
 
 kafka-topics-create:
 	kafka-topics --create --topic test --partitions 1 --replication-factor 1 --bootstrap-server localhost:9092
+
+kafka-produce:
+	kafka-console-producer --topic test --broker-list localhost:9092 < data/sample1.csv
+
+kafka-consume:
+	kafka-console-consumer --topic test --bootstrap-server localhost:9092 --from-beginning
